@@ -14,4 +14,10 @@ x<-rnorm(10000,mean=80,sd=10)
 hist(x,breaks=100,border="white",col=gray(0.7))
 abline(v=mean(x),col="blue",lwd=2)
 ```
+```{r GenerarHistogramaYBoxPlot}
+par(mfrow=c(2,1))
+hist(x,breaks=100,border="white",col=gray(0.7))
+abline(v=mean(x),col="blue",lwd=2)
 
+boxplot(x, horizontal = TRUE, col = gray(0.5))
+```
